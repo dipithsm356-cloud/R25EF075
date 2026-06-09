@@ -65,3 +65,19 @@ void triangle(int x, int y, int size)
     line(x, y, x + size, y + size);
     line(x - size, y + size, x + size, y + size);
 }
+void circle(int xc, int yc, int r)
+{
+    int x, y;
+
+    for(y = 0; y < ROWS; y++)
+    {
+        for(x = 0; x < COLS; x++)
+        {
+            int d = (x - xc) * (x - xc) +
+                    (y - yc) * (y - yc);
+
+            if(abs(d - r * r) <= r)
+                screen[y][x] = '*';
+        }
+    }
+}
