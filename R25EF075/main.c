@@ -59,3 +59,9 @@ void line(int x1, int y1, int x2, int y2)
         y += Yinc;
     }
 }
+void triangle(int x, int y, int size)
+{
+    line(x, y, x - size, y + size);
+    line(x, y, x + size, y + size);
+    line(x - size, y + size, x + size, y + size);
+}
