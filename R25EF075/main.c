@@ -13,3 +13,13 @@ void initialize()
         for(j = 0; j < COLS; j++)
             screen[i][j] = '_';
 }
+void display()
+{
+    int i, j;
+    for(i = 0; i < ROWS; i++)
+    {
+        for(j = 0; j < COLS; j++)
+            printf("%c", screen[i][j]);
+        printf("\n");
+    }
+}
