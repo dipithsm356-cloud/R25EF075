@@ -89,3 +89,26 @@ void eraseArea(int x, int y, int w, int h)
         for(j = x; j < x + w && j < COLS; j++)
             screen[i][j] = '_';
 }
+int main()
+{
+    int choice;
+
+    initialize();
+
+    while(1)
+    {
+        printf("\n===== 2D GRAPHICS EDITOR =====\n");
+        printf("1. Draw Rectangle\n");
+        printf("2. Draw Line\n");
+        printf("3. Draw Triangle\n");
+        printf("4. Draw Circle\n");
+        printf("5. Delete Area\n");
+        printf("6. Display Picture\n");
+        printf("7. Clear Picture\n");
+        printf("0. Exit\n");
+        printf("Enter choice: ");
+        scanf("%d", &choice);
+
+        if(choice == 0)
+            break;
+            
