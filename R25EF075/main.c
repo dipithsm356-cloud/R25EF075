@@ -23,3 +23,19 @@ void display()
         printf("\n");
     }
 }
+void rectangle(int x, int y, int w, int h)
+{
+    int i, j;
+
+    for(j = x; j < x + w; j++)
+    {
+        screen[y][j] = '*';
+        screen[y + h - 1][j] = '*';
+    }
+
+    for(i = y; i < y + h; i++)
+    {
+        screen[i][x] = '*';
+        screen[i][x + w - 1] = '*';
+    }
+}
