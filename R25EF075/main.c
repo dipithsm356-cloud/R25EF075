@@ -111,4 +111,21 @@ int main()
 
         if(choice == 0)
             break;
-            
+             switch(choice)
+        {
+            case 1:
+            {
+                int x, y, w, h;
+                printf("Enter x y width height: ");
+                scanf("%d%d%d%d", &x, &y, &w, &h);
+                rectangle(x, y, w, h);
+                break;
+            }
+             case 2:
+            {
+                int x1, y1, x2, y2;
+                printf("Enter x1 y1 x2 y2: ");
+                scanf("%d%d%d%d", &x1, &y1, &x2, &y2);
+                line(x1, y1, x2, y2);
+                break;
+            }
