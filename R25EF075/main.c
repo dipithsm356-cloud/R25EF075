@@ -81,3 +81,11 @@ void circle(int xc, int yc, int r)
         }
     }
 }
+void eraseArea(int x, int y, int w, int h)
+{
+    int i, j;
+
+    for(i = y; i < y + h && i < ROWS; i++)
+        for(j = x; j < x + w && j < COLS; j++)
+            screen[i][j] = '_';
+}
