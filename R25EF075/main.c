@@ -46,11 +46,16 @@ void line(int x1, int y1, int x2, int y2)
     int dy = y2 - y1;
     int steps = abs(dx) > abs(dy) ? abs(dx) : abs(dy);
 
+    /* CORRECTION START */
+    if(steps == 0)
+    {
+        screen[y1][x1] = '*';
+        return;
+    }
+    /* CORRECTION END */
+
     float Xinc = dx / (float)steps;
     float Yinc = dy / (float)steps;
-
-    float x = x1;
-    float y = y1;
 
     int i;
     for(i = 0; i <= steps; i++)
