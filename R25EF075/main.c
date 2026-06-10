@@ -129,3 +129,13 @@ int main()
                 line(x1, y1, x2, y2);
                 break;
             }
+            case 3:
+            {
+                int x, y, s;
+                printf("Enter top_x top_y size: ");
+                scanf("%d%d%d", &x, &y, &s);
+                triangle(x, y, s);
+                break;
+            }
+            
+
