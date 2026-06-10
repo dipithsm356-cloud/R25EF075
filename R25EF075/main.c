@@ -137,5 +137,14 @@ int main()
                 triangle(x, y, s);
                 break;
             }
+             case 4:
+            {
+                int xc, yc, r;
+                printf("Enter center_x center_y radius: ");
+                scanf("%d%d%d", &xc, &yc, &r);
+                circle(xc, yc, r);
+                break;
+            }
+
             
 
