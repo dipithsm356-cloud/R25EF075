@@ -153,7 +153,9 @@ int main()
                 eraseArea(x, y, w, h);
                 break;
             }
-            
+              case 6:
+                display();
+                break;
 
             
 
