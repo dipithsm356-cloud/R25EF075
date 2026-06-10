@@ -156,6 +156,11 @@ int main()
               case 6:
                 display();
                 break;
+                 case 7:
+                initialize();
+                printf("Canvas Cleared!\n");
+                break;
+
 
             
 
