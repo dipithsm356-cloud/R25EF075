@@ -145,6 +145,15 @@ int main()
                 circle(xc, yc, r);
                 break;
             }
+             case 5:
+            {
+                int x, y, w, h;
+                printf("Enter x y width height to delete: ");
+                scanf("%d%d%d%d", &x, &y, &w, &h);
+                eraseArea(x, y, w, h);
+                break;
+            }
+            
 
             
 
