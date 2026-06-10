@@ -160,6 +160,13 @@ int main()
                 initialize();
                 printf("Canvas Cleared!\n");
                 break;
+                 default:
+                printf("Invalid Choice!\n");
+        }
+    }
+
+    return 0;
+}
 
 
             
